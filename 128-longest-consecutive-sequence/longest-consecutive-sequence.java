@@ -7,18 +7,18 @@ class Solution {
 
         Map<Integer, Boolean> exploredMap = new HashMap<>();
 
-        // Store all numbers
+    
         for (int i = 0; i < nums.length; i++) {
             exploredMap.put(nums[i], false);
         }
 
-        // Check every number
+       
         for (int i = 0; i < nums.length; i++) {
 
             int num = nums[i];
             int currentLength = 1;
 
-            // Check forward
+       
             int nextNum = num + 1;
 
             while (exploredMap.containsKey(nextNum)
@@ -31,7 +31,7 @@ class Solution {
                 nextNum++;
             }
 
-            // Check backward
+        
             int prevNum = num - 1;
 
             while (exploredMap.containsKey(prevNum)
