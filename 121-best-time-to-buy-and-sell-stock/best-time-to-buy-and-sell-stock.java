@@ -15,3 +15,5 @@ class Solution {
         return maxProfit;
     }
 }
+//Time  : O(n)   
+// Space : O(1) 
