@@ -7,20 +7,20 @@ class Solution {
     public void sortColors(int[] nums) {
          int start=0;
          int end=nums.length-1;
-         int index=0;
-         while(index<=end){
-            if(nums[index]==0){
-                swap(nums,index,start);
-                index++;
+         int middle=0;
+         while(middle<=end){
+            if(nums[middle]==0){
+                swap(nums,middle,start);
+                middle++;
                 start++;
                 
             }
-            else if(nums[index]==2){
-                swap(nums,index,end);
+            else if(nums[middle]==2){
+                swap(nums,middle,end);
                 end--;
             }
             else{
-                index++;//when 1
+            middle++;//when 1
             }
          }
         
